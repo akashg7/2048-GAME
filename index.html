@@ -163,7 +163,7 @@ function combineArrayLeft(valueArray){
 }
 // console.log(combineArrayLeft([2,2,2,2]))
 
-// direct merge method -- homework
+
 // function mergeArrayLeft(valueArray){
 // }
 
@@ -296,30 +296,6 @@ function moveDown(){
 // shiftUp()
 // shiftDown()
 
-// Now this will work for us till question 6 without any changes at all.
-
-// Now let's make some wholesale changes to our code to implement the later portions 
-// of the questions
-
-// Now we need to write logic to mergeLeft and mergeRight and also change the names
-// shift functions to move functions. Move will also combine merge
-// Now there could be two ways to move
-// 1. shift combine shift -- the already made function can be used
-// 2. Direct merge -- preferred and better way
-
-// moveLeft()
-// moveUp()
-// moveRight()
-// moveDown()
-
-// Add event listener to move these things with arrow keys
-// we gather an event and from the event keyCode, we decide what key was pressed and 
-// we take action accordingly
-// 37 Left arrow
-// 38 Up arrow
-// 39 Right arrow
-// 40 Down arrow
-
 function keyupHandler(event){
     switch(event.keyCode){
         case 37:
@@ -349,13 +325,7 @@ function keyupHandler(event){
 
 document.body.addEventListener('keyup', keyupHandler);
 
-// Till this Q no. 7 + our main logic for the questions is done
 
-// Let's add logic for 
-// 1. Score Update --> changes in code above
-// 2. Game Over -- when no more possible moves
-// 3. Game Win -- when any one of the blocks is equal to 2048
-// 4. Game Re-start -- reset the game Board
 
 function checkAdjacent(values){
     let index = values.length - 1
